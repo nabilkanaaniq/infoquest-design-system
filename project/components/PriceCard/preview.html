@@ -1,0 +1,16 @@
+<!-- @dsCard group="Content" height=300 subtitle="Package and rate cards for pricing one-pagers" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {PriceCard}=NS;
+function App(){return h("div",{style:{display:"grid",gridTemplateColumns:"230px 1fr",gap:36,alignItems:"start"}},
+ h(PriceCard,{title:"30 min call",price:"$680",unit:"discounted flat fee"}),
+ h("div",{style:{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:24}},
+  [["10","5","$600","30"],["20","10","$550","35"],["30","15","$520","40"]].map(function(r){return h(PriceCard,{key:r[0],title:r[0]+" calls package",subtitle:r[1]+" credits",was:"$680",price:r[2],unit:"per 30 minute call",save:"Save "+r[3]+"%"});})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

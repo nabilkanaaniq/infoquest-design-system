@@ -1,0 +1,15 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Italic quote and tags beside an ink panel or numbered list" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselSplit}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselSplit,{theme:"banking",index:4,total:9,title:"SAMA rebuilt anti-fraud from the ground up.",quote:"“COVID-19 didn't just disrupt operations, it triggered a global surge in social-engineering that prompted SAMA to rewrite its anti-fraud framework end-to-end.”",tags:["Surge in social engineering","Updated anti-fraud framework","Detailed monitoring requirements"],panel:{eyebrow:"Local nuance · KSA-specific",title:"Commercial concealment.",body:"Conducting commercial activity under another party's name or license, a distinct crime under Saudi law.",foot:"A compliance signal that doesn't travel"},foot:{left:"03 — Post-COVID",right:"Anti-fraud · Commercial concealment"}})),
+ h(Scaled,{s:S},h(CarouselSplit,{theme:"insurance",index:6,total:8,title:"The single biggest blocker isn't AI.",quote:"Core systems built 20–30 years ago, never designed for real-time analytics, running underneath every modern insurer.",tags:["Legacy mainframes","Cultural inertia","Digital-talent shortage"],list:{eyebrow:"The path forward",items:[{title:"Re-platform to cloud-native.",body:"Migrate core off mainframes onto API-first cores."},{title:"Partner with insuretech.",body:"Specialists for triage, fraud and underwriting AI."},{title:"Reskill from within.",body:"Data, AI and CX upskilling across every function."}]},foot:{left:"05 — The obstacle",right:"Cloud migration · Insuretech · Reskilling"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

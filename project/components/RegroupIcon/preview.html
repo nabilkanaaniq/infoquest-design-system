@@ -1,0 +1,15 @@
+<!-- @dsCard group="Regroup" height=120 subtitle="One icon style for the regroup: line glyph in a filled circle" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupIcon}=NS;
+function App(){return h("div",{className:"row"},h("div",{style:{display:"flex",gap:14,flexWrap:"wrap",alignItems:"center"}},...["check","arrow","up","down","alert","x","plus","star","spark","chat","users","target","flag"].map(n=>h(RegroupIcon,{key:n,name:n,size:40,color:n==="arrow"?"#141414":n==="alert"?"#5e5e64":undefined}))));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

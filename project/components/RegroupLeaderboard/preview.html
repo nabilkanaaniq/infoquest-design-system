@@ -1,0 +1,15 @@
+<!-- @dsCard group="Regroup" height=380 subtitle="Leaderboard with gold, silver and bronze ranks" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupLeaderboard}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(RegroupLeaderboard,{n:21,eyebrow:"HR",title:"People Highlights",unit:"interactions",assetBase:AB,columns:[{title:"Interaction owners",rows:[{name:"Ayman Sadek",sub:"Jul 2026",value:34},{name:"Nour Dimashki",sub:"Sep 2025",value:32},{name:"Marilynn Ardo",sub:"Oct 2025",value:31},{name:"Mohannad Kassar",sub:"Nov 2025",value:27},{name:"Ahmad AlSarieh",sub:"Dec 2025",value:26}]},{title:"Project managers",rows:[{name:"Mostapha Zeort",sub:"Sep 2025",value:69},{name:"Carl Kai",sub:"Oct 2025",value:62},{name:"Mohannad Kassar",sub:"Jul 2026",value:62},{name:"Assem Debian",sub:"Jul 2026",value:60},{name:"Louay Hadada",sub:"May 2026",value:59}]}]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

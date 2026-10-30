@@ -1,0 +1,18 @@
+<!-- @dsCard group="Carousel" height=820 subtitle="1080×1080 Expert Voices frame: running head, body, running foot" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselCTA,CarouselColumns,CarouselSlide,CarouselStats}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselSlide,{theme:"banking",index:7,total:9,title:"SAMA is the spine. But it isn't the whole skeleton.",dek:"Banks in the Kingdom answer to multiple authorities depending on the activity.",foot:{left:"06 — Multi-regulator",right:"SAMA · CMA · NCA · MoC · MoI · SDAIA"}})),
+ h(Scaled,{s:S},h(CarouselSlide,{theme:"company",index:2,total:8,title:"The origin story.",dek:"The first homegrown expert network in the Middle East. Fast forward to today: 50%+ of demand comes from Europe.",foot:{left:"01 — Origin",right:"Middle East · Europe · APAC · Americas"}})),
+ h(Scaled,{s:S},h(CarouselColumns,{theme:"desert",index:3,total:6,variant:"card",title:"Three projects driving the GCC data center boom.",items:[{label:"UAE",title:"Moro Hub.",body:"The world's largest solar-powered data center.",meta:"Digital DEWA"},{label:"KSA",title:"Oxagon.",body:"A 1.5 GW campus in NEOM, entirely renewable.",meta:"$5B investment"},{label:"Qatar",title:"Meeza.",body:"Tier III certified, 99.98% uptime.",meta:"M-VAULT 5"}],foot:{left:"02 — The projects",right:"UAE · KSA · Qatar"}})),
+ h(Scaled,{s:S},h(CarouselStats,{theme:"neon",index:5,total:8,title:"Real-time everything.",lead:{label:"Chatbot resolution",value:"50%+",body:"Share of customer queries now handled by AI agents."},items:[{label:"Zurich UK",value:"30%",body:"Faster personal-injury claims with AI triage.",pct:30}],foot:{left:"04 — By the numbers",right:"Zurich · Allianz"}})),
+ h(Scaled,{s:S},h(CarouselCTA,{theme:"citrus",total:9,assetBase:AB,question:"Need expert insights on fintech, payments, or AI strategy?",featuring:["Featuring · Infoquest Expert","Fintech sector"]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

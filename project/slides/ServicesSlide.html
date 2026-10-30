@@ -1,0 +1,18 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Services" subtitle="Intro deck — services layout" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Infoquest — Services</title><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../components/bundle.js"></script>
+<style>html,body{margin:0;background:#000;overflow:hidden}</style></head><body><div id="root"></div>
+<script type="text/babel" src="SlideChrome.jsx"></script>
+<script type="text/babel">
+(()=>{const NS=window.InfoquestDesignSystem_80b250;
+const {FeatureCard}=NS;const p={padding:"30px 34px",minHeight:190};function Slide(){return <ContentSlide n={4} label="04 Services" eyebrow="Services" title="Four service lines covering every format of primary research engagement">
+ <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:28,marginTop:50}}>
+ <FeatureCard style={p} tone="accent" titleSize="lg" eyebrow="Expert Calls" title="1:1 calls with custom-sourced experts">Fast, flexible access to pre-screened experts sourced against your specific brief — with full CVs and screening responses provided prior to engagement.</FeatureCard>
+ <FeatureCard style={p} tone="accent" titleSize="lg" eyebrow="Dedicated Expert" title="Long-Term SME Engagement">Best suited for recurring expert access throughout the project lifecycle — a pre-agreed pool of advisory hours.</FeatureCard>
+ <FeatureCard style={p} titleSize="lg" eyebrow="Surveys" title="Rapid primary research">Quantitative and qualitative surveys deployed to verified industry participants for fast, statistically grounded market intelligence</FeatureCard>
+ <FeatureCard style={p} titleSize="lg" eyebrow="Consultant" title="Project-Based Consulting Support">We source and place former MBB and Tier 2 consultants for hands-on execution support. No permanent headcount needed.</FeatureCard></div></ContentSlide>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<Fit><Slide/></Fit>);})();
+</script></body></html>

@@ -1,0 +1,14 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Numbered process steps with a pass / stop outcome row" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselProcess}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselProcess,{theme:"banking",index:6,total:9,title:"How the SAMA sandbox actually works.",dek:"A structured environment for banks and non-banks to test new products.",steps:[{label:"Preparation",title:"Know your regulatory position.",body:"Review SAMA's published sandbox criteria."},{label:"Application",title:"Submit via Manasa portal.",body:"Product details, risk assessments and a consumer-protection plan."},{label:"Engagement",title:"High-level meeting with SAMA.",body:"Senior reps attend a direction-setting session."},{label:"Testing",title:"Controlled product test.",body:"Inside the sandbox under SAMA's active oversight."},{label:"Outcome",title:"Pass-or-stop decision.",body:"SAMA renders a clear verdict."}],outcomes:[{tone:"pass",title:"Pass.",body:"Product authorized to launch"},{tone:"stop",title:"Stop.",body:"Back to development, or the concept is withdrawn"}],foot:{left:"05 — SAMA sandbox",right:"STC Bank · Saudi Digital Bank"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

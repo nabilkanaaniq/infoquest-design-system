@@ -1,0 +1,24 @@
+<!-- @dsCard group="Documents" height=560 subtitle="Letter page: header, body, footer, legal bar" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:p.w*p.s,height:p.h*p.s,overflow:"hidden"}},h("div",{className:"sc",style:{width:p.w,height:p.h,transform:"scale("+p.s+")"}},p.children));}
+const PEOPLE=[
+ {name:"Omar Yamak",role:"CEO",email:"omar@iqnetwork.co",phones:["+971 58 895 0161"]},
+ {name:"Okba Dakdouk",role:"Associate Manager",email:"okba@iqnetwork.co",phones:["+1 (315) 843-1361","+1 (585) 326 0121"]},
+ {name:"Antonio M Otto",role:"Associate Manager",email:"antonio.otto@iqnetwork.co",phones:["+57 304 458 44 91"]}];
+const {DocPage,ProposalHeader,ContactFooter,LegalBar,FeatureCard,PriceCard}=NS;
+function App(){return h(Scaled,{w:816,h:1056,s:.5},h(DocPage,null,
+ h(ProposalHeader,{client:"Pibit",assetBase:AB}),
+ h("div",{style:{flex:1,padding:"40px 72px",background:"var(--surface-page)",display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:14,alignContent:"start"}},
+  h(FeatureCard,{title:"Custom-Sourced Experts"},"We dont recycle profiles from a ready-database."),
+  h(FeatureCard,{title:"Speed"},"We deliver your first batch of custom sourced experts in under two hours."),
+  h(FeatureCard,{title:"Flexibility"},"Continuous feedback loop and support on a daily basis as your project progresses.")),
+ h(ContactFooter,{people:PEOPLE,layout:"row"}),
+ h(LegalBar)));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

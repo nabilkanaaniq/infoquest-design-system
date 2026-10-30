@@ -1,0 +1,18 @@
+<!-- @dsCard group="Slides" height=250 subtitle="1440×810 content slide with strip footer" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:p.w*p.s,height:p.h*p.s,overflow:"hidden"}},h("div",{className:"sc",style:{width:p.w,height:p.h,transform:"scale("+p.s+")"}},p.children));}
+const {ContentSlide,Stat}=NS;
+function App(){return h(Scaled,{w:1440,h:810,s:.45},h(ContentSlide,{n:"4",eyebrow:"Why Infoquest",title:"Infoquest outperforms legacy expert networks on the four metrics that matter"},
+ h("div",{style:{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:30}},
+  h(Stat,{size:"deck",label:"Speed",value:"<2 hrs",caption:"Expert list delivery"}),
+  h(Stat,{size:"deck",label:"Cost",value:"~30%",caption:"Below market rate"}),
+  h(Stat,{size:"deck",label:"Quality",value:"Custom",caption:"Expert sourcing"}),
+  h(Stat,{size:"deck",label:"Control",value:"Flexible",caption:"Engagement Models"}))));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

@@ -1,0 +1,250 @@
+{
+  "manifestVersion": 3,
+  "name": "Infoquest Design System",
+  "namespace": "InfoquestDesignSystem_80b250",
+  "files": [
+    "Infoquest Logo Usage.html",
+    "assets/README.md",
+    "assets/imagery/README.md",
+    "assets/notes/COMPONENTS.md",
+    "assets/notes/MIGRATION-REPORT.md",
+    "assets/notes/SKILL.from-standalone.md",
+    "assets/team/README.md",
+    "components/AuroraBand/AuroraBand.d.ts",
+    "components/AuroraBand/README.md",
+    "components/Badge/Badge.d.ts",
+    "components/Badge/README.md",
+    "components/Button/Button.d.ts",
+    "components/Button/README.md",
+    "components/Callout/Callout.d.ts",
+    "components/Callout/README.md",
+    "components/CheckList/CheckList.d.ts",
+    "components/CheckList/README.md",
+    "components/ContactCard/ContactCard.d.ts",
+    "components/ContactCard/README.md",
+    "components/ContactFooter/ContactFooter.d.ts",
+    "components/ContactFooter/README.md",
+    "components/ContentSlide/ContentSlide.d.ts",
+    "components/ContentSlide/README.md",
+    "components/CoverSlide/CoverSlide.d.ts",
+    "components/CoverSlide/README.md",
+    "components/DataTable/DataTable.d.ts",
+    "components/DataTable/README.md",
+    "components/DocPage/DocPage.d.ts",
+    "components/DocPage/README.md",
+    "components/FeatureCard/FeatureCard.d.ts",
+    "components/FeatureCard/README.md",
+    "components/HeroHeader/HeroHeader.d.ts",
+    "components/HeroHeader/README.md",
+    "components/LegalBar/LegalBar.d.ts",
+    "components/LegalBar/README.md",
+    "components/Logo/Logo.d.ts",
+    "components/Logo/README.md",
+    "components/PriceCard/PriceCard.d.ts",
+    "components/PriceCard/README.md",
+    "components/ProposalHeader/ProposalHeader.d.ts",
+    "components/ProposalHeader/README.md",
+    "components/SectionHeader/README.md",
+    "components/SectionHeader/SectionHeader.d.ts",
+    "components/SpecTable/README.md",
+    "components/SpecTable/SpecTable.d.ts",
+    "components/Stat/README.md",
+    "components/Stat/Stat.d.ts",
+    "components/Steps/README.md",
+    "components/Steps/Steps.d.ts",
+    "components/Tag/README.md",
+    "components/Tag/Tag.d.ts",
+    "components/TeamMember/README.md",
+    "components/TeamMember/TeamMember.d.ts",
+    "components/bundle.css",
+    "components/bundle.js",
+    "components/index.d.ts",
+    "fonts/Inter-italic.woff2",
+    "fonts/Inter-normal.woff2",
+    "fonts/PlusJakartaSans-italic.woff2",
+    "fonts/PlusJakartaSans-normal.woff2",
+    "guidelines/brand-imagery.html",
+    "guidelines/doc-page.js",
+    "guidelines/gradient-aurora.html",
+    "guidelines/spacing-corners.html",
+    "guidelines/spacing-layout.html",
+    "guidelines/type-display.html",
+    "guidelines/type-eyebrows.html",
+    "guidelines/type-numerals.html",
+    "guidelines/type-text.html",
+    "slides/ClosingSlide.html",
+    "slides/CommercialSlide.html",
+    "slides/CoverageSlide.html",
+    "slides/ServicesSlide.html",
+    "slides/SlideChrome.jsx",
+    "slides/StatsSlide.html",
+    "slides/TableSlide.html",
+    "slides/TitleSlide.html",
+    "slides/WorkflowSlide.html",
+    "slides/index.html",
+    "tokens.css",
+    "ui_kits/expert-voices/EVFrame.jsx",
+    "ui_kits/expert-voices/EVSlides.jsx",
+    "ui_kits/expert-voices/README.md",
+    "ui_kits/expert-voices/index.html",
+    "ui_kits/sales-docs/CreditsPage.jsx",
+    "ui_kits/sales-docs/DocChrome.jsx",
+    "ui_kits/sales-docs/OnePagerPage.jsx",
+    "ui_kits/sales-docs/ProposalPage.jsx",
+    "ui_kits/sales-docs/README.md",
+    "ui_kits/sales-docs/index.html",
+    "uploads/White logo.svg",
+    "uploads/logo black.svg",
+    "uploads/logo white.svg",
+    "uploads/round icon.svg"
+  ],
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18",
+      "global": "React"
+    },
+    {
+      "name": "react-dom",
+      "version": "18",
+      "global": "ReactDOM"
+    }
+  ],
+  "components": [
+    {
+      "name": "AuroraBand",
+      "group": "Brand",
+      "summary": "The signature aurora gradient band."
+    },
+    {
+      "name": "ContactCard",
+      "group": "Brand",
+      "summary": "Point-of-contact block for footers and closing slides."
+    },
+    {
+      "name": "TeamMember",
+      "group": "Brand",
+      "summary": "Team member card for \"Meet the team\" pages: name, role, phone number and email on a flat tinted square."
+    },
+    {
+      "name": "TeamGrid"
+    },
+    {
+      "name": "ProposalHeader",
+      "group": "Documents",
+      "summary": "Top band of a client proposal: the white logo at left and a hairline-framed \"PROPOSAL · PREPARED FOR \" label at right, on the aurora."
+    },
+    {
+      "name": "HeroHeader",
+      "group": "Documents",
+      "summary": "Hero band for one-pagers: logo, a large display title and a short lede, on the aurora."
+    },
+    {
+      "name": "ContactFooter",
+      "group": "Documents",
+      "summary": "Aurora footer of a document: a \"Your Points of Contact\" title and a row of ContactCards."
+    },
+    {
+      "name": "LegalBar",
+      "group": "Documents",
+      "summary": "The black legal strip at the foot of every document: the informational-purposes disclaimer and the company registration line."
+    },
+    {
+      "name": "DocPage",
+      "group": "Documents",
+      "summary": "Letter-size page shell (816×1056) for sales documents."
+    },
+    {
+      "name": "ContentSlide",
+      "group": "Slides",
+      "summary": "Content slide on a 1440×810 canvas: an eyebrow and action title at the top, free content in the middle, and the aurora strip at the foot holding the page numbe…"
+    },
+    {
+      "name": "CoverSlide",
+      "group": "Slides",
+      "summary": "Full-bleed aurora slide for covers and closers: logo top-left and the date top-right; place the headline and body as children."
+    },
+    {
+      "name": "Callout",
+      "group": "Content",
+      "summary": "Commercial term or footnote set against a 1px neutral grey vertical hairline (never a colored accent bar)."
+    },
+    {
+      "name": "CheckIcon"
+    },
+    {
+      "name": "CheckList",
+      "group": "Content",
+      "summary": "Bulleted list with purple circle-check icons."
+    },
+    {
+      "name": "FeatureCard",
+      "group": "Content",
+      "summary": "Flat square card on a light tint — Infoquest's only card style."
+    },
+    {
+      "name": "PriceCard",
+      "group": "Content",
+      "summary": "Rate / package card for pricing one-pagers."
+    },
+    {
+      "name": "SectionHeader",
+      "group": "Content",
+      "summary": "Deck/page section opener — small bold eyebrow, then a full-sentence light-weight title."
+    },
+    {
+      "name": "Stat",
+      "group": "Content",
+      "summary": "Headline metric block — the \"four metrics that matter\" row and workflow timings."
+    },
+    {
+      "name": "Steps",
+      "group": "Content",
+      "summary": "Numbered process row (Scope → Sourcing → Delivery)."
+    },
+    {
+      "name": "Badge",
+      "group": "Core",
+      "summary": "Tiny uppercase confidence flag shown inline after a fill-rate figure in proposals."
+    },
+    {
+      "name": "Button",
+      "group": "Core",
+      "summary": "Square, flat CTA for briefs, proposals and carousel end-cards (\"Submit your request here\", \"Reach out to us →\")."
+    },
+    {
+      "name": "Logo",
+      "group": "Core",
+      "summary": "The official Infoquest lockup — top-left of cover/header bands, bottom-right of carousel covers and CTAs."
+    },
+    {
+      "name": "Tag",
+      "group": "Core",
+      "summary": "Small square label for perks, facets and category headers."
+    },
+    {
+      "name": "DataTable",
+      "group": "Data",
+      "summary": "Purple-header table."
+    },
+    {
+      "name": "SpecTable",
+      "group": "Data",
+      "summary": "Grey-key / white-value table used throughout proposals."
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "Other"
+    },
+    {
+      "name": "imagery"
+    },
+    {
+      "name": "notes"
+    },
+    {
+      "name": "team"
+    }
+  ]
+}

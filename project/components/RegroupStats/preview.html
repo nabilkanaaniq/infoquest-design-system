@@ -1,0 +1,16 @@
+<!-- @dsCard group="Regroup" height=380 subtitle="KPI tiles with trend icons, plus a simple bar chart" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupStats}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(RegroupStats,{n:18,eyebrow:"Marketing",title:"Inbound: the payoff, Oct 2025 → Aug 2026",assetBase:AB,tiles:[{value:"47",label:"Inbound leads"},{value:"76%",label:"Marketing-sourced"},{value:"13",label:"From AI"},{value:"46%",label:"AI-search win rate",highlight:true}],bars:{title:"Inbound leads per month",data:[["Oct",1],["Nov",5],["Dec",1],["Jan",3],["Feb",2],["Mar",1],["Apr",4],["May",5],["Jun",7],["Jul",8],["Aug",10]].map(([l,v])=>({label:l,value:v,highlight:l==="Aug"}))}})),
+ h(Scaled,{s:S},h(RegroupStats,{n:17,eyebrow:"Commercial",title:"Last 12 weeks",assetBase:AB,tiles:[{value:"55",label:"New users",trend:"up"},{value:"58",label:"New projects",trend:"up"},{value:"515",label:"Demand",trend:"up"}]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

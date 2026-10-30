@@ -1,0 +1,24 @@
+<!-- @dsCard group="Sales documents" viewport="900x900" name="Proposal & one-pagers" subtitle="Client proposal, engagement one-pager, credits one-pager" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Infoquest — Sales documents</title><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{background:#d9d9dc}</style></head><body><div id="root"></div>
+<script type="text/babel" src="DocChrome.jsx"></script>
+<script type="text/babel" src="ProposalPage.jsx"></script>
+<script type="text/babel" src="OnePagerPage.jsx"></script>
+<script type="text/babel" src="CreditsPage.jsx"></script>
+<script type="text/babel">
+const {Button}=window.InfoquestDesignSystem_80b250;
+function App(){const [doc,setDoc]=React.useState(localStorage.getItem('iq-doc')||'proposal');const [client,setClient]=React.useState('Strella');const [entity,setEntity]=React.useState('uk');
+ React.useEffect(()=>localStorage.setItem('iq-doc',doc),[doc]);
+ const tabs=[['proposal','Proposal'],['onepager','Engagement one-pager'],['credits','Credits one-pager']];
+ return <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:20,padding:"20px 0 60px"}}>
+  <div style={{display:"flex",gap:8,alignItems:"center",flexWrap:"wrap",justifyContent:"center"}}>{tabs.map(([k,l])=><Button key={k} size="sm" variant={doc===k?"dark":"outline"} onClick={()=>setDoc(k)}>{l}</Button>)}
+   <Button size="sm" variant="outline" onClick={()=>setEntity(entity==='uk'?'uae':'uk')}>Legal entity: {entity==='uk'?'UK':'UAE'}</Button>
+   {doc==='proposal'&&<input value={client} onChange={e=>setClient(e.target.value)} style={{font:"500 12px var(--font-text)",padding:"7px 10px",border:"1.5px solid var(--text-primary)",borderRadius:0,width:120,flex:"none"}} aria-label="Client"/>}</div>
+  {doc==='proposal'&&<ProposalPage client={client||'Client'} entity={entity}/>}{doc==='onepager'&&<OnePagerPage entity={entity}/>}{doc==='credits'&&<CreditsPage/>}
+ </div>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

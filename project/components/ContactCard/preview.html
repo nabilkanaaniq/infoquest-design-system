@@ -1,0 +1,19 @@
+<!-- @dsCard group="Brand" height=210 subtitle="Point-of-contact block, inverse and on light" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:0;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {ContactCard,AuroraBand}=NS;
+function App(){return h("div",{style:{display:"flex",flexDirection:"column",gap:16}},
+ h(AuroraBand,{variant:"footer",padding:"22px 28px"},h("div",{style:{display:"flex",gap:36,flexWrap:"wrap"}},
+  h(ContactCard,{name:"Omar Yamak",role:"CEO",email:"omar@iqnetwork.co",phones:["+971 58 895 0161"]}),
+  h(ContactCard,{name:"Uliana Rodionova",role:"Commercial Director",email:"uliana@iqnetwork.co",phones:["+44 7367 109688"]}))),
+ h("div",{className:"row",style:{gap:36}},
+  h(ContactCard,{inverse:false,name:"Omar Yamak",role:"CEO",email:"omar@iqnetwork.co",phones:["+971 58 895 0161"]}),
+  h(ContactCard,{inverse:false,name:"Mahmoud Bazerbachi",role:"Managing Director",email:"mahmoud@iqnetwork.co",phones:["+971 58 244 1369"]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

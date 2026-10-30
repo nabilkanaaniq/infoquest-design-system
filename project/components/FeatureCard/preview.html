@@ -1,0 +1,21 @@
+<!-- @dsCard group="Content" height=270 subtitle="Flat square tinted card, gray, accent and white tones" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {FeatureCard}=NS;
+function App(){return h("div",{style:{display:"flex",flexDirection:"column",gap:16}},
+ h("div",{style:{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:14,alignItems:"start"}},
+  h(FeatureCard,{title:"Custom-Sourced Experts"},"We dont recycle profiles from a ready-database."),
+  h(FeatureCard,{tone:"accent",eyebrow:"Expert Calls",title:"1:1 calls",titleSize:"lg"},"Pre-screened experts sourced against your brief."),
+  h(FeatureCard,{titleSize:"sm",title:"Fast, Rolling Work"},"ASAP start, first vetted experts typically within 2 hours of kickoff, delivered on a rolling basis.")),
+ h("div",{style:{background:"var(--surface-card)",padding:14,display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:14,alignItems:"start"}},
+  h(FeatureCard,{tone:"white",align:"center",title:"Surveys"},"First-hand market data from verified respondents."),
+  h(FeatureCard,{tone:"white",align:"center",title:"Written reports"},"Expert written insights-rich market briefs to white papers."),
+  h(FeatureCard,{tone:"white",align:"center",title:"Expert sub-contracting"},"High-impact experts as part of your team through flexible models.")));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

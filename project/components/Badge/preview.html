@@ -1,0 +1,15 @@
+<!-- @dsCard group="Core" height=110 subtitle="Feasibility confidence flags" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {Badge}=NS;
+function App(){return h("div",{style:{display:"flex",flexDirection:"column",gap:16}},
+ h("div",{className:"row"},h(Badge,{level:"high"}),h(Badge,{level:"medium"}),h(Badge,{level:"low"})),
+ h("div",{style:{fontSize:12}},h("b",null,"100% fill (5 of 5)")," ",h(Badge,{level:"high"})," \u00a0 ",h("b",null,"50% fill (2\u20133 of 5)")," ",h(Badge,{level:"medium"})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

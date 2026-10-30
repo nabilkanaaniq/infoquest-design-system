@@ -1,0 +1,15 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Closing card: question, purple contact bar, expert credit" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselCTA}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselCTA,{theme:"banking",total:9,assetBase:AB,question:"Need expert insights on banking, compliance, or AI strategy?",featuring:["Featuring · Infoquest Expert","Senior Compliance Specialist · Saudi Banking Sector"]})),
+ h(Scaled,{s:S},h(CarouselCTA,{theme:"insurance",total:8,assetBase:AB,question:"Need expert insights on insurance, fintech, AI strategy, and more?",featuring:["Featuring · Insurance Leader","Former leader · Allianz · Zurich · BBVA"]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

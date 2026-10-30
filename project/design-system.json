@@ -1,0 +1,65 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Other": {
+      "files": {},
+      "name": "Other",
+      "order": []
+    },
+    "imagery": {
+      "files": {},
+      "name": "imagery",
+      "order": []
+    },
+    "notes": {
+      "files": {},
+      "name": "notes",
+      "order": []
+    },
+    "team": {
+      "files": {},
+      "name": "team",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-20T08:50:24.007Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/ui_kits/expert-voices/README.md",
+      "project/ui_kits/sales-docs/README.md"
+    ]
+  },
+  "groups": [
+    "Other",
+    "imagery",
+    "notes",
+    "team"
+  ],
+  "lastChange": {
+    "at": "2026-10-21T08:15:00Z",
+    "by": "Nabil Kanaan",
+    "note": "Added the Regroup component group (15, informal internal quarterly deck with icons) and vibrant carousel presets (desert, neon, citrus); carousels may now leave the brand palette.",
+    "via": "Claude"
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "global": "React",
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "global": "ReactDOM",
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "InfoquestDesignSystem_80b250",
+  "sections": {},
+  "title": "Infoquest Design System"
+}

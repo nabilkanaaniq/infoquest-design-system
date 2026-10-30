@@ -1,0 +1,17 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Commercial" subtitle="Intro deck — commercial layout" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Infoquest — Commercial</title><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../components/bundle.js"></script>
+<style>html,body{margin:0;background:#000;overflow:hidden}</style></head><body><div id="root"></div>
+<script type="text/babel" src="SlideChrome.jsx"></script>
+<script type="text/babel">
+(()=>{const NS=window.InfoquestDesignSystem_80b250;
+const {DataTable,Callout}=NS;function Slide(){return <ContentSlide n={8} label="08 Commercial" eyebrow="Commercial Model" title="Usage-based pricing with a quality guarantee and no annual commitment">
+ <div style={{display:"grid",gridTemplateColumns:"1fr 300px",gap:14,marginTop:24}}>
+ <div><DataTable grid columns={["Call Type","Call Duration Options","Turnaround"]} rows={[["30-minute call","Initial 30-minute calls billed at 75% of the hourly rate","<2 hrs"],["60-minute call","Initial 60-minute calls at billed 100% of the hourly rate","<2 hrs"],["Volume arrangements","Package deals are available for large call volumes at competitive rates","Same day"]]}/><i style={{display:"block",fontSize:13,marginTop:10}}>*Rates are typically 30% below traditional vendors per-call pricing</i></div>
+ <div style={{background:"var(--surface-card)",padding:"28px 24px",textAlign:"center",alignSelf:"start"}}><div style={{fontSize:13,fontWeight:600}}>Pay as you go rate card</div><div style={{font:"var(--type-stat)",color:"var(--text-accent)",margin:"18px 0"}}>$900/credit</div><div style={{fontSize:12,fontWeight:700}}>Framework Activation</div><div style={{fontSize:12,lineHeight:1.4}}>A 5-credit deposit is required to activate the framework, fully deductible from the final invoice.</div></div></div>
+ <div style={{display:"flex",flexDirection:"column",gap:18,marginTop:26}}><Callout title="10-minute grace period">If the expert doesn't meet your requirements in the first 10 minutes, you pay nothing, no questions asked</Callout><Callout title="Calls over one hour">Billed in 15-minute increments beyond the first hour. Follow-up calls on the same terms</Callout></div></ContentSlide>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<Fit><Slide/></Fit>);})();
+</script></body></html>

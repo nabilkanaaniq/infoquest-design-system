@@ -1,0 +1,15 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Expert pull quote with role attribution" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselQuote}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselQuote,{theme:"banking",index:2,total:9,quote:"SAMA wants a financial sector that is resilient, innovative, and trustworthy, the banks building toward all three are the ones best placed to grow.",attribution:"Senior Compliance Specialist · Saudi Banking Sector",foot:{left:"01 — The Mandate",right:"Resilient · Innovative · Trustworthy"}})),
+ h(Scaled,{s:S},h(CarouselQuote,{theme:"insurance",index:2,total:8,quote:"“Insurance has moved from being purely reactive, stepping in only when something goes wrong, to becoming genuinely proactive and customer-centric.”",attribution:"Insurance Leader · Allianz · Zurich · BBVA",foot:{left:"01 — The Shift",right:"Risk underwriting → Relationship management"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

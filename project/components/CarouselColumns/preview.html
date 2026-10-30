@@ -1,0 +1,16 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="2–4 numbered columns: pillars, reasons, rules" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselColumns}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselColumns,{theme:"insurance",index:3,total:8,variant:"rule",title:"Three reasons customers walk away from their insurer.",items:[{title:"Opacity.",body:"Policyholders don't understand what they're covered for until it's too late."},{title:"Slow claims.",body:"When people are most vulnerable, they run into bureaucracy, forms and weeks of waiting."},{title:"Cold service.",body:"Interactions feel transactional, with little sense the insurer cares."}],callout:{value:"+20%",text:"Lift in customer satisfaction after Allianz redesigned its claims process around empathy mapping."},foot:{left:"02 — The customer problem",right:"Allianz · AXA · Human-centric design"}})),
+ h(Scaled,{s:S},h(CarouselColumns,{theme:"banking",index:3,total:9,variant:"card",title:"Three pillars define Saudi banking compliance today.",items:[{label:"Pillar",title:"Cybersecurity.",body:"National Cybersecurity Authority + SAMA. NCA Essential Controls · SAMA CSF.",meta:"Recently updated"},{label:"Pillar",title:"Consumer protection.",body:"SAMA Consumer Protection Department. Fair-treatment and disclosure principles.",meta:"Longstanding priority"},{label:"Pillar",title:"Personal data.",body:"Saudi Data & AI Authority. PDPL, aligned with GDPR principles.",meta:"New law, 2022"}],foot:{left:"02 — The pillars",right:"SAMA · NCA · SDAIA"}})),
+ h(Scaled,{s:S},h(CarouselColumns,{theme:"banking",index:8,total:9,variant:"bar",title:"Three rules for getting Saudi banking compliance right.",items:[{title:"Define your goals before the framework.",body:"Know your own organization before opening the SAMA rulebook."},{title:"Comply with all of it, not just SAMA.",body:"CMA. MoC. MoI. SDAIA. Multi-regulator literacy is the baseline."},{title:"Bake consumer protection into design.",body:"Transparency and fair treatment must be wired in from day one."}],foot:{left:"07 — The playbook",right:"Define · Comply · Embed"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

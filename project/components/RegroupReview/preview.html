@@ -1,0 +1,15 @@
+<!-- @dsCard group="Regroup" height=380 subtitle="Quarter review: promised · delivered · faced, with icons" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupReview}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(RegroupReview,{n:6,eyebrow:"The Big Story",title:"Where we were in May & where we are now",assetBase:AB,columns:[{title:"What we promised",icon:"arrow",items:["Sign equity contracts","Deliver AI MVP in 4 months","Grow Bogota on the ground in a new office","Hire! Accounting, SDR, Associates, Admin",{text:"Grow up: tighten operations, protect culture, win the long game with clients",bold:true}]},{title:"What we delivered",icon:"check",items:["Hit the biggest month in our history","Career equities signed","13 new joiners","Bogotá office open since July","US/Europe push worked"]},{title:"Things we faced/adjusted",icon:"alert",items:["LATAM visas delay: met with embassy","Credits/currency error: built calculator","US demand overload: shifted focus","AI MVP delayed: data delays, need 2 more months"]}]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Content" height=300 subtitle="Purple circle-check bullets, stacked or inline" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {CheckList,CheckIcon}=NS;
+function App(){return h("div",{style:{display:"flex",flexDirection:"column",gap:24}},
+ h("div",{style:{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24}},
+  h(CheckList,{title:"Cross-Border Coverage",items:["Saudi Arabia & GCC","Middle East & North Africa","Europe"],gap:10}),
+  h(CheckList,{title:"Multi-Sector Coverage",note:"non-exhaustive list",items:["Energy & Utilities","Technology & Software","Infrastructure & Construction"],gap:10})),
+ h(CheckList,{inline:true,items:["Custom-sourced for each mandate, not pre-database driven","Rapid delivery under 2 hours","Compliance-cleared before any introduction"]}),
+ h("div",null,h("div",{className:"lbl"},"CheckIcon"),h("div",{className:"row"},h(CheckIcon,{size:14}),h(CheckIcon,null),h(CheckIcon,{size:28}))));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

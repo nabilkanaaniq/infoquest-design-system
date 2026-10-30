@@ -1,0 +1,15 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="By-the-numbers slide: lead stat plus supporting stats" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselStats}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselStats,{theme:"insurance",index:5,total:8,assetBase:AB,photo:"photo-insurance-cover.jpg",title:"The receipts.",dek:"Production deployments across global insurers, not lab experiments.",lead:{label:"Chatbot resolution",value:"50%+",body:"Share of customer queries now handled by AI agents, up from roughly 2% when early chatbots launched in life insurance."},items:[{label:"Zurich UK",value:"30%",body:"Faster personal-injury claim processing using AI triage.",pct:30},{label:"Allianz Australia",value:"50%",body:"Travel claims fully automated, zero human touch required.",pct:50}],foot:{left:"04 — By the numbers",right:"Lemonade · Zurich · Allianz"}})),
+ h(Scaled,{s:S},h(CarouselStats,{theme:"company",index:4,total:8,title:"Built for speed.",lead:{label:"First expert list",value:"<2 hrs",body:"Custom-sourced experts land in under two hours."},items:[{label:"Pricing",value:"~30%",body:"Below traditional vendors per call."},{label:"Demand",value:"50%+",body:"Now comes from Europe.",pct:50}],foot:{left:"03 — The edge",right:"Speed · Cost · Reach"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

@@ -1,0 +1,16 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Table" subtitle="Intro deck — table layout" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Infoquest — Table</title><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../components/bundle.js"></script>
+<style>html,body{margin:0;background:#000;overflow:hidden}</style></head><body><div id="root"></div>
+<script type="text/babel" src="SlideChrome.jsx"></script>
+<script type="text/babel">
+(()=>{const NS=window.InfoquestDesignSystem_80b250;
+const {DataTable,CheckList}=NS;function Slide(){return <ContentSlide n={7} label="07 Table" eyebrow="Sample Profiles" title="We access senior officials that pre-built network panels cannot shortlist">
+ <DataTable style={{marginTop:24}} columns={["Role","Organization"]} rows={[["Technical & Business Director","Terra Drone Arabia"],["Operations Manager","Cyberhawk"],["Key Account Manager - EMEA & LATAM Region","Flyability"],["GTM Lead - Middle East","Energy Robotics"],["Former Regional FDE Lead","Gecko Robotics"],["Former VP of Sales","Taurob"]]}/>
+ <div style={{fontSize:12,margin:"22px 0 18px"}}>*These are purely non exhaustive examples of types of profiles we have access to, they may or may not be available to connect with for consultation work at project launch</div>
+ <CheckList inline items={["Custom-sourced for each mandate, not pre-database driven","Rapid delivery under 2 hours","Compliance-cleared before any introduction"]}/></ContentSlide>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<Fit><Slide/></Fit>);})();
+</script></body></html>

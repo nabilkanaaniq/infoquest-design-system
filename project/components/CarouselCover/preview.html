@@ -1,0 +1,15 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Photo cover with headline, dek and expert credit" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselCover}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselCover,{theme:"banking",total:9,assetBase:AB,title:h("span",null,"Saudi Banking,",h("br"),"Re-Regulated."),dek:"Cybersecurity, consumer protection, and personal data, how SAMA is reshaping what it takes to operate a bank in the Kingdom.",featuring:["Featuring · Infoquest Expert","Senior Compliance Specialist · Saudi Banking Sector"]})),
+ h(Scaled,{s:S},h(CarouselCover,{theme:"company",total:8,assetBase:AB,title:h("span",null,"From Niche",h("br"),"to Global."),dek:"How Infoquest is redefining expert networks.",featuring:["Infoquest Expert Insights","Omar Yamak · CEO, Infoquest"]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

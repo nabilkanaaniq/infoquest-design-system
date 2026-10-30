@@ -1,0 +1,15 @@
+<!-- @dsCard group="Regroup" height=380 subtitle="Q&A and feedback: open space and discussion starters" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupQA}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(RegroupQA,{n:28,assetBase:AB,open:{body:"Open space to share questions or concerns and/or provide feedback on processes, tools, or company direction.",prompt:"What's one thing you'd fix/change/improve?"},starters:["Make the morning meeting only to align on projects, and have a few extra minutes in the morning to calm and reset","Have a clear KPI-driven assessment to identify good demand from bad demand","The overworking culture","COP/USD currency conversion","Flexibility (esp. with WFH): time to recharge, esp. those putting 2–3 hours in commuting per day","What is next for Infoquest, regionally and globally?"]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

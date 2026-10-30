@@ -1,0 +1,214 @@
+/* Infoquest Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --iq-purple-700: #5a3496; /* Darker purple: primary Button and ghost link hover, and the text on `iq-purple-100` in the accent Tag (7.26:1). 8.87:1 on `white`. */
+  --iq-purple-600: #6d41b4; /* Infoquest purple, the one accent: prices, metric values, table headers, step dots, check icons and the primary Button fill. Matches the logo roundel. Text on `white` 6.85:1, on `surface-card` 6.17:1; `white` on it 6.85:1. */
+  --iq-purple-500: #8457c9; /* Lighter purple step; no component uses it. The Expert Voices cover title sets the hyphen of 'Re-Regulated.' in this value. */
+  --iq-purple-100: #e9e7f2; /* Lavender tint: the lead FeatureCard (`tone="accent"`), the PriceCard savings bar and the accent Tag ground (`surface-card-accent`). Dark text on it 15.77:1. */
+  --iq-purple-50: #f1eff8; /* Lightest purple tint; no component uses it. */
+  --aurora-blue: #1e09ea; /* Aurora gradient stop: electric blue, top-left of `assets/bg-aurora.jpg`, in `--gradient-aurora` and `--gradient-strip`. White text on it 9.20:1. */
+  --aurora-violet: #7a1be9; /* Aurora gradient stop: violet, beside the blue. White text on it 6.64:1. */
+  --aurora-pink: #ef9df2; /* Aurora gradient stop: the pink glow, bottom-left. A glow, not a text ground. */
+  --aurora-indigo: #100c31; /* Aurora gradient stop: dark indigo leading into the near-black mass on the right. White text on it 18.77:1. */
+  --aurora-night: #070614; /* Near-black aurora stop and the ground under `bg-aurora.jpg` in AuroraBand and cover slides. White text on it 20.09:1. */
+  --white: #ffffff; /* Paper (`surface-paper`), the white page of documents, and white text and icons on purple, black and aurora grounds. */
+  --gray-25: #fafafa; /* Page background (`surface-page`). */
+  --gray-50: #f3f3f3; /* Flat card tint (`surface-card`): FeatureCard, PriceCard, SpecTable key cells, Stat bands and DataTable striped rows. Dark text on it 15.32:1. */
+  --gray-100: #e9e9e9; /* Headshot placeholder square in ContactCard on light grounds. */
+  --gray-200: #e4e4e4; /* 1px row rules and cell grid lines in DataTable and SpecTable (`border-subtle`). Decorative: 1.27:1 on `white`. */
+  --gray-300: #c9c9cc; /* Rules: the Steps connector, the PriceCard divider, vertical column hairlines in decks (`border-rule`). Decorative separator, 1.65:1 on `white`; never a control border. */
+  --gray-500: #76767c; /* Muted text (`text-muted`: struck-through list prices) and the Callout hairline. 3.43:1 on `white`: below 4.5:1 for small text, kept as sourced; use it for large or non-essential text only. */
+  --gray-600: #5e5e64; /* Secondary text (`text-secondary`): captions, notes, check-list notes. 6.44:1 on `white`, 5.80:1 on `surface-card`. */
+  --gray-800: #2a2a2e; /* Dark neutral step; no component uses it. */
+  --gray-900: #141414; /* Inverse surface (`surface-inverse`): the black legal bar and the dark Button. `white` on it 18.42:1. */
+  --black: #050505; /* Chip ground (`surface-chip`): the dark Tag. `white` on it 20.38:1. */
+  --signal-high: #1e7b45; /* Feasibility badge, high confidence: Badge fill with `white` text (5.28:1). */
+  --signal-medium: #a0681c; /* Feasibility badge, medium confidence: Badge fill with `white` text (4.68:1). */
+  --signal-low: #b23a2b; /* Feasibility badge, low confidence: Badge fill with `white` text (5.94:1). Added for completeness; only high and medium appear in the sources. */
+  --ev-banking-paper: #f0e8db; /* Expert Voices Banking: cream slide ground. Dark text on it; `ev-banking-ink` on it 10.0:1. */
+  --ev-banking-ink: #103d2d; /* Expert Voices Banking: forest ink for cover and CTA slides, panels and the CTA bar. `white` on it 12.16:1. */
+  --ev-insurance-paper: #c8381e; /* Expert Voices Insurance: vermilion slide ground, white text (5.20:1). */
+  --ev-insurance-ink: #2c2e17; /* Expert Voices Insurance: olive ink for cover and CTA slides and panels. `white` on it 13.90:1. Ink on paper is 2.68:1, so never set text in one on the other. */
+  --ev-datacenter-paper: #0c1a3f; /* Expert Voices Data Centers: navy slide ground, white text (17.00:1). */
+  --ev-datacenter-ink: #2a8bc6; /* Expert Voices Data Centers: blue ink for the CTA ground and accent labels. `white` on it 4.64:1; as small text on `ev-datacenter-paper` only 3.66:1, so use it for large text. */
+  --ev-fintech-paper: #b1435e; /* Expert Voices Fintech: raspberry slide ground, white text (5.48:1). */
+  --ev-fintech-ink: #5c8490; /* Expert Voices Fintech: slate ink for the CTA ground. `white` on it 4.07:1: large text only (24px and up). */
+  --ev-company-paper: #0a0440; /* Expert Voices Company: deep navy-violet ground for Infoquest's own stories (not sector posts), kept from the 'From Niche to Global' carousel. White text on it. */
+  --ev-company-ink: var(--iq-purple-600); /* Expert Voices Company: purple for the CTA ground and panels on the Company theme. `white` on it 6.85:1. */
+  --ev-desert-paper: #e07b39; /* Expert Voices Desert (vibrant preset, from 'Inside GCC's Digital Oasis'): orange slide ground. Dark text `#1A0F08` on it 6.33:1; white text fails, so never set white body text on it. */
+  --ev-desert-ink: #521010; /* Expert Voices Desert: deep maroon for the cover, CTA ground, panels and accent numbers. `white` on it 15:1; on `ev-desert-paper` 4.9:1. */
+  --ev-neon-paper: #150726; /* Expert Voices Neon (vibrant preset, from 'The Future of Insurance'): near-black violet ground, white text (19.26:1); teal `#19C3B1` accent numbers 8.7:1. */
+  --ev-neon-ink: #e0218a; /* Expert Voices Neon: magenta CTA ground and panels. `white` on it 4.42:1: large text only (24px and up). */
+  --ev-citrus-paper: #f4c430; /* Expert Voices Citrus (vibrant preset): yellow slide ground. Dark text on it 11.22:1. */
+  --ev-citrus-ink: #1d3a8a; /* Expert Voices Citrus: cobalt for the cover, CTA ground, panels and accent numbers. `white` on it 10.37:1; on `ev-citrus-paper` 6.32:1. */
+  --surface-page: var(--gray-25); /* Page background of documents and slides. */
+  --surface-paper: var(--white); /* Paper white where a page sits on a tinted ground. */
+  --surface-card: var(--gray-50); /* Flat card and band tint: FeatureCard, PriceCard, Stat bands, Tag light. */
+  --surface-card-accent: var(--iq-purple-100); /* Lavender card: the lead service FeatureCard, the PriceCard savings bar. */
+  --surface-inverse: var(--gray-900); /* Black legal bar, dark Button, near-black ground for the inverse logo. */
+  --surface-chip: var(--black); /* Ground of the dark Tag. */
+  --text-primary: #0e0e10; /* Headings and labels on `surface-page`, `surface-paper`, `surface-card` and `surface-card-accent`: 18.48:1, 19.28:1, 17.38:1 and 15.77:1. */
+  --text-body: #1c1c1f; /* Body copy on `surface-page`, `surface-paper` and `surface-card`: 16.29:1, 17.00:1 and 15.32:1. */
+  --text-secondary: var(--gray-600); /* Secondary text on `surface-page`, `surface-paper` and `surface-card`: 6.17:1, 6.44:1 and 5.80:1. */
+  --text-muted: #6f6f74; /* Muted text (struck-through list prices). Below 4.5:1 on every light surface (3.09 to 3.43:1); kept as sourced, use only for large or non-essential text. */
+  --text-inverse: var(--white); /* Text on `surface-inverse`, purple, `aurora-*` and photography grounds. */
+  --text-accent: var(--iq-purple-600); /* Prices, metric values and eyebrow-sized accents on `surface-page`, `surface-paper`, `surface-card` and `surface-card-accent`: 6.56:1, 6.85:1, 6.17:1 and 5.60:1. */
+  --border-subtle: var(--gray-200); /* Subtle 1px border (`--border-hair`) and table row rules. */
+  --border-rule: var(--gray-300); /* 1px rule: the PriceCard divider, the Steps connector, one-pager divider. Decorative, 1.65:1 on `white`. */
+  --border-inverse: rgba(255,255,255,.85); /* White hairline frame on the aurora (inverse Button, `--border-frame-inverse`, 1.5px). */
+  --accent: var(--iq-purple-600); /* Link colour (`a` in `bundle.css`); 6.56:1 on `surface-page`. */
+  --accent-hover: var(--iq-purple-700); /* Link hover colour. */
+  --shadow-none: none; /* No drop shadows in the brand: depth comes from flat tints. */
+}
+:root {
+  --space-1: 4px; /* Base step of the 4px scale. */
+  --space-2: 8px; /* Scale step. */
+  --space-3: 12px; /* ContactCard gap between photo and text; Callout padding between hairline and text. */
+  --space-4: 16px; /* Scale step. */
+  --space-5: 20px; /* Gap when stacking 2 to 4 Callouts (about 20px); same value as `gutter`. */
+  --space-6: 24px; /* Column gap in Steps. */
+  --space-8: 32px; /* Scale step. */
+  --space-10: 40px; /* AuroraBand default vertical padding. */
+  --space-12: 48px; /* Scale step. */
+  --space-16: 64px; /* Scale step. */
+  --space-20: 80px; /* The largest step of the scale. */
+  --page-margin-doc: 56px; /* Side margin of proposals and one-pagers; AuroraBand default side padding. */
+  --page-margin-deck: 56px; /* Side margin of deck slides at 1440 wide. */
+  --gutter: 20px; /* Grid gutter between cards. */
+  --rule-height: 44px; /* Vertical rule beside callouts. */
+  --radius-none: 0; /* Everything is square: cards, buttons, tags, tables, photos, badges. */
+  --radius-dot: 9999px; /* Numbered step dots and check icons: the only circles. */
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-text: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --text-hero: 700 72px/1.05 var(--font-display); /* Cover headline, Plus Jakarta Sans Bold with tight tracking. 72px at 1440 wide; deck covers set it larger inline. */
+  --text-display: 700 44px/1.2 var(--font-display); /* One-pager H1 and the contact footer title, Plus Jakarta Sans Bold. */
+  --text-section: 300 30px/1.2 var(--font-display); /* Deck section title: one full-sentence claim in Plus Jakarta Sans Light, sentence case, no full stop. */
+  --text-eyebrow: 700 13px/1.2 var(--font-display); /* Short bold eyebrow above a section title. */
+  --text-h1: 700 36px/1.2 var(--font-text); /* Proposal title, Inter Bold. */
+  --text-h2: 600 24px/1.2 var(--font-text); /* Card heading, Inter SemiBold. */
+  --text-h3: 600 18px/1.2 var(--font-text); /* Sub-heading, Inter SemiBold. */
+  --text-stat: 700 40px/1 var(--font-text); /* Metric value, Inter Bold, set in `text-accent`. */
+  --text-body-lg: 400 18px/1.4 var(--font-text); /* Large body size in the type scale. */
+  --text-small: 400 13px/1.45 var(--font-text); /* Captions and notes; footnotes are italic and begin with an asterisk. */
+  --text-micro: 400 11px/1.4 var(--font-text); /* Eyebrows and carousel running heads. */
+  --text-badge: 700 8px/1.2 var(--font-text); /* Confidence Badge label, uppercase. */
+}
+.hero {
+  font-family: var(--font-display);
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+.display {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.section {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.h1 {
+  font-family: var(--font-text);
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.h2 {
+  font-family: var(--font-text);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.h3 {
+  font-family: var(--font-text);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.stat {
+  font-family: var(--font-text);
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.body-lg {
+  font-family: var(--font-text);
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-text);
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.small {
+  font-family: var(--font-text);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.micro {
+  font-family: var(--font-text);
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.badge {
+  font-family: var(--font-text);
+  font-size: 8px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-normal.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-italic.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-normal.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-italic.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}

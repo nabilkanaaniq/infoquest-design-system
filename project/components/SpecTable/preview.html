@@ -1,0 +1,17 @@
+<!-- @dsCard group="Data" height=300 subtitle="Grey-key, white-value table for proposals" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {SpecTable,Badge}=NS;
+function App(){return h(SpecTable,{rows:[
+ {label:h(React.Fragment,null,"Segment 1",h("br"),"Enterprise inference buyers",h("br"),h("i",{style:{fontWeight:400}},"Target ~5 completes")),
+  value:h(React.Fragment,null,h("b",null,"100% fill (5 of 5)")," ",h(Badge,{level:"high"}),h("br"),"Deep, addressable bench of Head / VP / Director of ML Platform.")},
+ {label:"Expert call 60-minute",value:h(React.Fragment,null,h("b",null,"$900"),"/expert")},
+ {label:"Launch deposit",value:"1 ($900) credit required to initiate sourcing efforts"}]});}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

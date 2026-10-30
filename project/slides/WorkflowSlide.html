@@ -1,0 +1,15 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Workflow" subtitle="Intro deck — workflow layout" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Infoquest — Workflow</title><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../components/bundle.js"></script>
+<style>html,body{margin:0;background:#000;overflow:hidden}</style></head><body><div id="root"></div>
+<script type="text/babel" src="SlideChrome.jsx"></script>
+<script type="text/babel">
+(()=>{const NS=window.InfoquestDesignSystem_80b250;
+const {Steps,Stat}=NS;function Slide(){return <ContentSlide n={5} label="05 Workflow" eyebrow="Engagement Workflow" title="A three-step engagement model moves from brief to first expert call in under 24 hours">
+ <Steps style={{marginTop:60}} steps={[{title:"Scope Definition",body:"Define stakeholder profile, sector scope, geography, and timeline. Intake takes five minutes"},{title:"Custom Sourcing & Screening",body:"We combine AI, targeted outreach, local intel, expert verification, conflict screening and compliance checks prior to any introduction"},{title:"Engagement & Delivery",body:"Expert calls, transcripts, or whatever fits your needs delivered and quality-checked. Follow-up briefs fulfilled within the same SLA"}]}/>
+ <div style={{background:"var(--surface-card)",marginTop:70,padding:"36px 0",display:"grid",gridTemplateColumns:"repeat(3,1fr)"}}>{[["Brief received","0 hrs"],["First list delivered","<2 hrs"],["First call scheduled","<24 hrs"]].map(([l,v])=><Stat size="deck" key={l} align="center" caption={null} label={<span style={{fontWeight:400}}>{l}</span>} value={v}/>)}</div></ContentSlide>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<Fit><Slide/></Fit>);})();
+</script></body></html>

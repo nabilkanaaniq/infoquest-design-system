@@ -1,0 +1,16 @@
+<!-- @dsCard group="Regroup" height=380 subtitle="People board: joiners, anniversaries, promotions" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupPeople}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(RegroupPeople,{n:2,title:"A quick welcome to our latest joiners!",assetBase:AB,groups:[{title:"Associate new joiners!",people:[{name:"Khaled Abboud"},{name:"Mohammad Noureddine"},{name:"Omar Moujaly"},{name:"Yehya Dayekh"}]},{title:"Americas new joiners!",people:[{name:"Juan Miguel Yate Alcala",role:"Associate"},{name:"Ivan Ordenez",role:"Associate"},{name:"Antonio Moreno Otto",role:"Senior SDR"}]},{title:"Office & accounting",people:[{name:"Jana Zakaria",role:"Office Admin"},{name:"Zeia Nasrallah",role:"Accounting Associate"}]}]})),
+ h(Scaled,{s:S},h(RegroupPeople,{n:3,title:"A quick congrats",confetti:true,assetBase:AB,groups:[{title:"Anniversaries",flex:2.4,rows:[{title:"1-year anniversary",people:[{name:"Ahmad Al Sarieh"},{name:"Khaled Shazbek"},{name:"Ali Berjawi"},{name:"Catherine El Riachi"},{name:"Uliana Rodionova"}]},{title:"2-year anniversary",people:[{name:"Okba Dakdouk"},{name:"Talal Kaddoura"},{name:"Adam Ballan"}]},{title:"3-year anniversary",people:[{name:"Carl Kai"},{name:"Sara Tawil"},{name:"Mostapha Zeort"}]}]},{title:"CST",people:[{name:"Joe Malaab",role:"Senior Associate, Founding Member, Americas"}]}]})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

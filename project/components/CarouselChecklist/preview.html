@@ -1,0 +1,15 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Check rows with hairlines; also the company-profile slide" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselChecklist}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselChecklist,{theme:"datacenter",index:2,total:6,profile:true,title:"Moro Hub",dek:"A subsidiary of Digital DEWA in the UAE, hosting the world's largest solar-powered data center.",items:[{title:"Cloud & digital infrastructure services",bullets:["A key digital arm of Digital DEWA","Strategically located in Dubai Marina"]},{title:"Green, smart and solar-powered",bullets:["Runs entirely on renewable energy","Recognized by Guinness World Records"]},{title:"Powerful cybersecurity",bullets:["Dedicated Cyber Defence Centre with 24/7 monitoring"]}],foot:{left:"01 — UAE",right:"Digital DEWA · Dubai"}})),
+ h(Scaled,{s:S},h(CarouselChecklist,{theme:"company",index:7,total:8,title:"Built for 2025, not 2005.",dek:"Legacy firms are trying to adapt. Infoquest was born ready.",items:[{title:"Gen Z talent"},{title:"AI integration"},{title:"Modern systems"}],foot:{left:"06 — Born ready",right:"Talent · AI · Systems"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

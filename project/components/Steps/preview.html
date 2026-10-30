@@ -1,0 +1,16 @@
+<!-- @dsCard group="Content" height=150 subtitle="Numbered engagement workflow" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {Steps}=NS;
+function App(){return h(Steps,{steps:[
+ {title:"Scope Definition",body:"Define stakeholder profile, sector scope, geography, and timeline. Intake takes five minutes"},
+ {title:"Custom Sourcing & Screening",body:"We combine AI, targeted outreach, local intel, expert verification, conflict screening and compliance checks prior to any introduction"},
+ {title:"Engagement & Delivery",body:"Expert calls, transcripts, or whatever fits your needs delivered and quality-checked. Follow-up briefs fulfilled within the same SLA"}]});}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

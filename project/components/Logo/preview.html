@@ -1,0 +1,21 @@
+<!-- @dsCard group="Core" height=210 subtitle="Colour, white, inverse lockups and the roundel" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {Logo}=NS;
+const cell={height:110,display:"flex",alignItems:"center",justifyContent:"center"};
+const cap={font:"600 11px var(--font-text)",color:"var(--text-primary)",marginTop:6};
+const sub={font:"400 10px var(--font-mono)",color:"var(--text-secondary)"};
+function Tile(props){return h("div",null,h("div",{style:Object.assign({},cell,props.style)},props.children),h("div",{style:cap},props.name),h("div",{style:sub},props.note));}
+function App(){return h("div",{style:{display:"grid",gridTemplateColumns:"1.3fr 1.3fr 1.3fr .6fr",gap:8}},
+ h(Tile,{name:"color",note:"light pages",style:{background:"var(--white)",outline:"1px solid var(--gray-200)"}},h(Logo,{variant:"color",height:34,assetBase:"../../assets/"})),
+ h(Tile,{name:"white",note:"aurora, photography",style:{background:"var(--aurora-night)",backgroundImage:"var(--bg-aurora)",backgroundSize:"cover",backgroundPosition:"center"}},h(Logo,{variant:"white",height:34,assetBase:"../../assets/"})),
+ h(Tile,{name:"inverse",note:"near-black only",style:{background:"var(--surface-inverse)"}},h(Logo,{variant:"inverse",height:34,assetBase:"../../assets/"})),
+ h(Tile,{name:"markOnly",note:"avatars",style:{background:"var(--surface-page)",outline:"1px solid var(--gray-200)"}},h(Logo,{markOnly:true,height:56,assetBase:"../../assets/"})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

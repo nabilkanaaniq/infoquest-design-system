@@ -1,0 +1,18 @@
+<!-- @dsCard group="Slides" viewport="1280x720" name="Closing" subtitle="Intro deck — closing layout" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Infoquest — Closing</title><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../components/bundle.js"></script>
+<style>html,body{margin:0;background:#000;overflow:hidden}</style></head><body><div id="root"></div>
+<script type="text/babel" src="SlideChrome.jsx"></script>
+<script type="text/babel">
+(()=>{const NS=window.InfoquestDesignSystem_80b250;
+const {ContactCard}=NS;function Slide(){return <CoverSlide label="09 Closing"><div style={{position:"absolute",left:90,top:290,right:90}}>
+ <h2 style={{margin:0,font:"400 56px/1.1 var(--font-display)",letterSpacing:"-0.01em"}}>Request your expert list today</h2>
+ <p style={{fontSize:20,margin:"18px 0 26px"}}>Submit a brief now and receive a curated expert list within 2 hours, no commitment, no setup fees</p>
+ <div style={{width:96,height:1.5,background:"#fff",marginBottom:36}}></div>
+ <div style={{display:"grid",gridTemplateColumns:"repeat(2,max-content)",gap:"30px 60px"}}>{[["Omar Yamak","CEO","omar@iqnetwork.co","+971 58 895 0161"],["Mahmoud Bazerbachi","Managing Director","mahmoud@iqnetwork.co","+971 58 244 1369"],["Emile Tabet","Head of Strategic Growth","emile@iqnetwork.co","+971 55 477 6854"],["Uliana Rodionova","Commercial Director","uliana@iqnetwork.co","+44 7367 109688"]].map(([n,r,e,p])=><ContactCard key={n} name={n} role={r} email={e} phones={[p]} photo="" photoSize={110}/>)}</div></div>
+ <a href="https://www.iqnetwork.co" style={{position:"absolute",right:90,bottom:60,color:"#fff",fontSize:18}}>www.iqnetwork.co</a></CoverSlide>;}
+ReactDOM.createRoot(document.getElementById('root')).render(<Fit><Slide/></Fit>);})();
+</script></body></html>

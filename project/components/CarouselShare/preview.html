@@ -1,0 +1,14 @@
+<!-- @dsCard group="Carousel" height=420 subtitle="Market-share donut with a short note" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){return h("div",{style:{width:1080*p.s,height:1080*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:1080,height:1080,transform:"scale("+p.s+")"}},p.children));}
+const S=.36;
+const {CarouselShare}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(CarouselShare,{theme:"datacenter",index:3,total:6,title:"Khazna",dek:"UAE's leading hyperscale data center provider.",value:74,label:"Khazna holds approximately 74% of the UAE market.",note:"It operates 24 active data centers in the UAE, with plans for further expansion.",rest:"Other providers",foot:{left:"02 — UAE",right:"Khazna · Market share"}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Brand" height=380 subtitle="Equal-column grid of team member cards" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:var(--white)}
+.lbl{font:600 10px var(--font-text);color:var(--text-secondary);text-transform:uppercase;letter-spacing:.08em;margin:18px 0 8px}
+.lbl:first-child{margin-top:0}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250;
+const {TeamMember,TeamGrid}=NS;
+function two(a,b){return h(React.Fragment,null,a,h("br"),b);}
+const T=[
+ {name:"Omar Yamak",role:"CEO",phone:"+971 58 895 0161",email:"omar@iqnetwork.co"},
+ {name:"Mahmoud Bazerbachi",role:"Managing Director",phone:"+971 58 244 1369",email:"mahmoud@iqnetwork.co"},
+ {name:"Uliana Rodionova",role:"Commercial Director",phone:"+44 7367 109688",email:"uliana@iqnetwork.co"},
+ {name:"Emile Tabet",role:"Head of Strategic Growth",phone:"+971 55 477 6854",email:"emile@iqnetwork.co"},
+ {name:"Julian Buritica",role:"Senior Manager",phone:"+1 585 326 0442",email:"julian.buritica@iqnetwork.co"},
+ {name:"Okba Dakdouk",role:"Associate Manager",phone:two("+1 (315) 843-1361","+1 (585) 326 0121"),email:"okba@iqnetwork.co"}];
+function App(){return h(TeamGrid,{columns:3},T.map(function(p){return h(TeamMember,Object.assign({key:p.name},p));}));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>

@@ -1,0 +1,16 @@
+<!-- @dsCard group="Regroup" height=380 subtitle="Theme of the quarter: list rows beside a big panel" -->
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+:root{--bg-aurora:url("../../assets/bg-aurora.jpg")}
+body{margin:0;padding:24px;background:var(--white)}
+.sc{transform-origin:0 0}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+</style></head><body><div id="root"></div><script>
+const h=React.createElement,NS=window.InfoquestDesignSystem_80b250,AB="../../assets/";
+function Scaled(p){const w=p.w||1440,ht=p.h||810;return h("div",{style:{width:w*p.s,height:ht*p.s,overflow:"hidden",flex:"none"}},h("div",{className:"sc",style:{width:w,height:ht,transform:"scale("+p.s+")"}},p.children));}
+const S=.4;
+const {RegroupTheme}=NS;
+function App(){return h("div",{className:"row"},h(Scaled,{s:S},h(RegroupTheme,{n:9,intro:"Last quarter the theme was growing up.",items:["Tightening operational best practices","Making the AI bet real","Protecting culture as we scale","Winning the long game with clients","Making Bogota fly"],tone:"lavender",panel:{kicker:"Last Quarter",title:"Growing Up",body:"Every great company is great because of consistency, not bursts. This quarter we earn the consistency."}})),
+ h(Scaled,{s:S},h(RegroupTheme,{n:10,intro:"Sept surge is coming, the machine is staffed for it, and Q4 should be the biggest quarter we've ever had.",items:["Deliver the surge in demand","Win back our share of wallet","Ship the AI MVP"],icon:"arrow",panel:{kicker:"This Quarter",title:"Closing the Gap",body:"Demand is up 77%. Delivery is up ~60%. This quarter we close the gap."}})));}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script></body></html>
